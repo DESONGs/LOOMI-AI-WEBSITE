@@ -1,0 +1,298 @@
+/* 统一主题样式 - 覆盖原有突兀的渐变和配色 */
+
+/* 统一所有区域的背景色过渡 */
+.hero-section,
+.ecosystem-section,
+.partners-section,
+#strategic-partnerships {
+  background: var(--bg-primary);
+  transition: background-color 0.3s ease;
+}
+
+/* 统一卡片样式 */
+.ecosystem-card,
+.partner-item,
+.feature-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  transition: all 0.3s ease;
+}
+
+.ecosystem-card:hover,
+.partner-item:hover,
+.feature-card:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--primary-blue-light);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(45, 90, 240, 0.15);
+}
+
+/* 统一标题样式 */
+.section-title,
+.hero-title,
+.ecosystem-title {
+  color: var(--text-primary);
+}
+
+.title-gradient {
+  color: var(--primary-blue-light);
+}
+
+.title-accent {
+  color: var(--text-secondary);
+}
+
+/* 统一按钮样式 */
+.btn-primary {
+  background: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--primary-blue-light);
+  border-color: var(--primary-blue-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(45, 90, 240, 0.3);
+}
+
+/* 统一生态系统区域 */
+.ecosystem-section {
+  background: var(--bg-secondary);
+  padding: var(--spacing-2xl) var(--spacing-lg);
+}
+
+/* 统一合作伙伴区域 */
+#strategic-partnerships {
+  background: var(--bg-tertiary);
+  padding: 80px 20px;
+}
+
+/* 移除所有突兀的渐变背景 */
+.hero-background,
+.ecosystem-section::before,
+.section-bg-decoration,
+.particle-field,
+.gradient-orb {
+  display: none !important;
+}
+
+/* 统一页脚 */
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* 统一导航栏 */
+.navbar {
+  background: var(--bg-overlay);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* 终端样式调整 */
+.floating-terminal {
+  background: rgba(30, 35, 50, 0.9);
+  border: 1px solid var(--primary-blue-light);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.terminal-header {
+  background: rgba(45, 90, 240, 0.1);
+  border-bottom: 1px solid var(--primary-blue-light);
+}
+
+/* 统一所有文字颜色 */
+.hero-subtitle,
+.section-subtitle,
+.ecosystem-description,
+.footer-description {
+  color: var(--text-secondary);
+}
+
+/* 功能标签统一样式 */
+.feature-pill {
+  background: rgba(45, 90, 240, 0.1);
+  color: var(--primary-blue-light);
+  border: 1px solid rgba(45, 90, 240, 0.2);
+}
+
+.feature-pill:hover {
+  background: rgba(45, 90, 240, 0.2);
+  color: var(--text-primary);
+}
+
+/* MemeOS 产品展示图样式 */
+.memeos-product-showcase {
+  margin: var(--spacing-lg) 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+}
+
+.memeos-product-image {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.memeos-product-image:hover {
+  transform: scale(1.02);
+  border-color: var(--primary-blue-light);
+  box-shadow: 0 8px 25px rgba(45, 90, 240, 0.2);
+}
+
+/* 为MemeOS卡片添加特殊布局 */
+.meme-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.meme-card .ecosystem-features {
+  margin-top: auto;
+}
+
+/* MemeOS 专题页面样式 */
+.memeos-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 120px var(--spacing-lg) var(--spacing-2xl);
+  background: var(--bg-secondary);
+}
+
+.memeos-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.memeos-text {
+  animation: fadeInUp 1s ease-out;
+}
+
+.memeos-title {
+  font-family: var(--font-mono);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-primary);
+}
+
+.memeos-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.7;
+}
+
+.memeos-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.memeos-feature {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--text-secondary);
+}
+
+.memeos-feature-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--primary-blue-light);
+  stroke-width: 2;
+}
+
+.memeos-visual {
+  position: relative;
+  animation: fadeInRight 1s ease-out 0.3s both;
+}
+
+.memeos-product-demo {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--primary-blue-light);
+}
+
+.memeos-demo-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.memeos-demo-image:hover {
+  transform: scale(1.02);
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+  .ecosystem-section,
+  #strategic-partnerships {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+  
+  .memeos-product-image {
+    max-height: 200px;
+  }
+  
+  .memeos-product-showcase {
+    margin: var(--spacing-md) 0;
+  }
+  
+  .memeos-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    text-align: center;
+  }
+  
+  .memeos-title {
+    font-size: 2.5rem;
+  }
+  
+  .memeos-visual {
+    order: -1;
+  }
+  
+  .memeos-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .memeos-section {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .memeos-product-image {
+    max-height: 160px;
+  }
+  
+  .memeos-title {
+    font-size: 2rem;
+  }
+  
+  .memeos-subtitle {
+    font-size: 1.1rem;
+  }
+}

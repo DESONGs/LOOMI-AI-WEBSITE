@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOMI AI - The Future of On-Chain Intelligence</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/startup-style.css">
+    <link rel="stylesheet" href="css/partners-section.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/unified-theme.css">
+    <style>
+      /* 合作伙伴 Logo 排版样式 */
+      #strategic-partnerships { 
+        padding: 80px 20px; 
+        background: linear-gradient(180deg, #0A0B14 0%, #0F1218 100%);
+      }
+      #strategic-partnerships .section-header { 
+        text-align: center; 
+        margin-bottom: 60px; 
+      }
+      .section-title {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        font-family: 'JetBrains Mono', monospace;
+      }
+      .title-gradient {
+        background: linear-gradient(135deg, #00B4D8, #00D9FF);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .title-accent {
+        color: #FFFFFF;
+      }
+      .section-subtitle {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 18px;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+      .partner-grid { 
+        display: grid; 
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 40px 20px; 
+        align-items: center; 
+        justify-items: center; 
+        max-width: 1000px; 
+        margin: 0 auto; 
+      }
+      .partner-grid img { 
+        max-height: 50px; 
+        max-width: 180px;
+        width: auto; 
+        height: auto; 
+        object-fit: contain; 
+        background: transparent; 
+        filter: brightness(0.9) contrast(1.1);
+        transition: filter 0.3s ease;
+      }
+      .partner-grid img:hover {
+        filter: brightness(1.1) contrast(1.2);
+      }
+      /* 响应式布局 */
+      @media (max-width: 768px) {
+        .partner-grid { 
+          grid-template-columns: repeat(2, 1fr); 
+          gap: 30px 15px; 
+        }
+        .section-title { font-size: 36px; }
+        #strategic-partnerships { padding: 60px 15px; }
+      }
+      @media (max-width: 480px) {
+        .partner-grid { 
+          grid-template-columns: 1fr; 
+          gap: 25px; 
+        }
+        .section-title { font-size: 28px; }
+      }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/images/lomi-logo-128.png" alt="LOOMI AI" class="logo-main">
+                <span class="logo-text">LOOMI AI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#ecosystem" class="nav-link">Ecosystem</a></li>
+                <li><a href="#rwa" class="nav-link">RWA</a></li>
+                <li><a href="#memeos" class="nav-link">MemeOS</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://x.com/LooloomiAI" target="_blank" rel="noopener noreferrer" class="nav-social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页面 -->
+    <section class="hero-section" id="home">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="badge-text">🚀 LIVE ON MAINNET</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-gradient">The First</span>
+                    <span class="title-highlight">On-Chain</span>
+                    <span class="title-gradient">Operating System</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Seamlessly navigate DeFi, RWA, and MemeCoins with AI-powered intelligence.
+                    <strong>LOOMI AI</strong> transforms how you interact with decentralized finance through
+                    autonomous smart contracts and real-time market intelligence.
+                </p>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <span class="control-dot red"></span>
+                            <span class="control-dot yellow"></span>
+                            <span class="control-dot green"></span>
+                        </div>
+                        <span class="terminal-title">loomi-ai-cli v2.4.1</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="code-line">
+                            <span class="prompt">➜</span>
+                            <span class="command">loomi connect --chain ethereum</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="output">✓ Connected to Ethereum Mainnet (Block: 18,901,247)</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="output">⚡ AI Agent initialized • Gas: 12 gwei</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="output">🌊 DeFi protocols synced • TVL: $45.2B</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="output">🏗️ RWA tokenization ready • Assets: 847</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="output">🚀 Meme radar active • Signals: 12,847</span>
+                        </div>
+                        <div class="code-line typing">
+                            <span class="prompt">➜</span>
+                            <span class="command"></span>
+                            <span class="cursor">▊</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- 生态系统页面 -->
+    <section class="ecosystem-section" id="ecosystem">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-accent">One Platform.</span>
+                    <span class="title-main">Three Ecosystems.</span>
+                    <span class="title-accent">Infinite Possibilities.</span>
+                </h2>
+                <p class="section-subtitle">
+                    LOOMI AI orchestrates the complete on-chain experience across DeFi protocols,
+                    Real-World Assets, and the emerging MemeEconomy with unparalleled intelligence.
+                </p>
+            </div>
+
+            <div class="ecosystem-grid">
+                <!-- DeFi 板块 -->
+                <div class="ecosystem-card defi-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-glow defi-glow"></div>
+                    <div class="ecosystem-header">
+                        <div class="ecosystem-icon defi-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <div class="ecosystem-badge">DeFi</div>
+                    </div>
+                    <h3 class="ecosystem-title">Decentralized Finance Protocol</h3>
+                    <p class="ecosystem-description">
+                        Advanced yield optimization, liquidity management, and automated trading strategies.
+                        LOOMI AI monitors 500+ DeFi protocols in real-time, executing optimal trades with zero slippage tolerance.
+                    </p>
+                    <div class="ecosystem-features">
+                        <span class="feature-pill">Yield Farming</span>
+                        <span class="feature-pill">Flash Loans</span>
+                        <span class="feature-pill">Cross-Chain</span>
+                        <span class="feature-pill">MEV Protection</span>
+                    </div>
+                </div>
+
+                <!-- RWA 板块 -->
+                <div class="ecosystem-card rwa-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-glow rwa-glow"></div>
+                    <div class="ecosystem-header">
+                        <div class="ecosystem-icon rwa-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                <polyline points="7.5,4.21 12,6.81 16.5,4.21"/>
+                                <polyline points="7.5,19.79 7.5,14.6 3,12"/>
+                                <polyline points="21,12 16.5,14.6 16.5,19.79"/>
+                            </svg>
+                        </div>
+                        <div class="ecosystem-badge">RWA</div>
+                    </div>
+                    <h3 class="ecosystem-title">Real World Assets Bridge</h3>
+                    <p class="ecosystem-description">
+                        Tokenization of physical assets including real estate, commodities, and securities.
+                        AI-driven asset valuation and fractional ownership with institutional-grade custody.
+                    </p>
+                    <div class="ecosystem-features">
+                        <span class="feature-pill">Real Estate</span>
+                        <span class="feature-pill">Commodities</span>
+                        <span class="feature-pill">Securities</span>
+                        <span class="feature-pill">Insurance</span>
+                    </div>
+                </div>
+
+                <!-- MemeOS 板块 -->
+                <div class="ecosystem-card meme-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-glow meme-glow"></div>
+                    <div class="ecosystem-header">
+                        <div class="ecosystem-icon meme-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                                <line x1="15" y1="9" x2="15.01" y2="9"/>
+                            </svg>
+                        </div>
+                        <div class="ecosystem-badge">MemeOS</div>
+                    </div>
+                    <h3 class="ecosystem-title">Meme Economy Operating System</h3>
+                    <p class="ecosystem-description">
+                        The first AI-powered meme coin launcher and trading engine. Social sentiment analysis,
+                        viral prediction models, and community-driven governance for the new attention economy.
+                    </p>
+                    <div class="ecosystem-features">
+                        <span class="feature-pill">Viral Scanner</span>
+                        <span class="feature-pill">Fair Launch</span>
+                        <span class="feature-pill">Social Signals</span>
+                        <span class="feature-pill">Diamond Hands</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MemeOS 专题展示页面 -->
+    <section class="memeos-section" id="memeos">
+        <div class="memeos-content">
+            <div class="memeos-text">
+                <h2 class="memeos-title">
+                    MemeOS
+                    <br>
+                    <span class="title-gradient">Meme Economy</span>
+                    <br>
+                    Operating System
+                </h2>
+                <p class="memeos-subtitle">
+                    The first AI-powered meme coin launcher and trading engine. 
+                    Social sentiment analysis, viral prediction models, and community-driven 
+                    governance for the new attention economy.
+                </p>
+                
+                <div class="memeos-features">
+                    <div class="memeos-feature">
+                        <svg class="memeos-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                        <span>Viral Scanner</span>
+                    </div>
+                    <div class="memeos-feature">
+                        <svg class="memeos-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                        <span>Fair Launch</span>
+                    </div>
+                    <div class="memeos-feature">
+                        <svg class="memeos-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                        <span>Social Signals</span>
+                    </div>
+                    <div class="memeos-feature">
+                        <svg class="memeos-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <span>Diamond Hands</span>
+                    </div>
+                </div>
+                
+                <a href="https://looloomi.ai/" target="_blank" rel="noopener noreferrer" class="btn-primary btn-large glow-effect" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; margin-top: var(--spacing-lg);">
+                    <span>Launch MemeOS</span>
+                    <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="memeos-visual">
+                <div class="memeos-product-demo">
+                    <img src="assets/LOOMI-AI-MECOIN-AGENT.jpg" alt="LOOMI AI Meme Coin Agent Interface" class="memeos-demo-image" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作伙伴（简化版，仅显示 Logo） -->
+    <section id="strategic-partnerships">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="title-gradient">Strategic</span>
+                <span class="title-accent">Partnerships</span>
+            </h2>
+            <p class="section-subtitle">Collaborating with leading global institutions to build the future of decentralized finance</p>
+        </div>
+        <div class="partner-grid">
+            <img src="assets/images/partners/coinmarketcap.svg" alt="CoinMarketCap" loading="lazy">
+            <img src="assets/images/partners/wallet.svg" alt="Wallet" loading="lazy">
+            <img src="assets/images/partners/harvest-global.svg" alt="Harvest Global Investments" loading="lazy">
+            <img src="assets/images/partners/metalpha.svg" alt="MetAlpha" loading="lazy">
+            <img src="assets/images/partners/hashkey.svg" alt="HashKey Chain" loading="lazy">
+            <img src="assets/images/partners/infini.svg" alt="Infini" loading="lazy">
+            <img src="assets/images/partners/new-harvest.svg" alt="New Harvest Wealth Securities" loading="lazy">
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="assets/images/lomi-logo-128.png" alt="LOOMI AI" class="logo-main">
+                        <span class="logo-text">LOOMI AI</span>
+                    </div>
+                    <p class="footer-description">
+                        The first on-chain operating system that seamlessly integrates DeFi, RWA, and MemeCoins with AI-powered intelligence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/startup-effects.js"></script>
+    
+</body>
+</html>
