@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="css/unified-theme.css">
     <style>
       /* 合作伙伴 Logo 排版样式 */
-      #strategic-partnerships { 
-        padding: 80px 20px; 
+      #strategic-partnerships {
+        padding: 64px 20px;
         background: linear-gradient(180deg, #0A0B14 0%, #0F1218 100%);
       }
       #strategic-partnerships .section-header { 
@@ -46,22 +46,22 @@
         margin: 0 auto;
         line-height: 1.6;
       }
-      .partner-grid { 
-        display: grid; 
-        grid-template-columns: repeat(4, 1fr); 
-        gap: 40px 20px; 
-        align-items: center; 
-        justify-items: center; 
-        max-width: 1000px; 
-        margin: 0 auto; 
+      .partner-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px 30px;
+        align-items: center;
+        justify-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
       }
-      .partner-grid img { 
-        max-height: 50px; 
-        max-width: 180px;
-        width: auto; 
-        height: auto; 
-        object-fit: contain; 
-        background: transparent; 
+      .partner-grid img {
+        max-height: 80px;
+        max-width: 240px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        background: transparent;
         filter: brightness(0.9) contrast(1.1);
         transition: filter 0.3s ease;
       }
@@ -70,17 +70,27 @@
       }
       /* 响应式布局 */
       @media (max-width: 768px) {
-        .partner-grid { 
-          grid-template-columns: repeat(2, 1fr); 
-          gap: 30px 15px; 
+        .partner-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 40px 20px;
+          max-width: 600px;
+        }
+        .partner-grid img {
+          max-height: 60px;
+          max-width: 180px;
         }
         .section-title { font-size: 36px; }
         #strategic-partnerships { padding: 60px 15px; }
       }
       @media (max-width: 480px) {
-        .partner-grid { 
-          grid-template-columns: 1fr; 
-          gap: 25px; 
+        .partner-grid {
+          grid-template-columns: 1fr;
+          gap: 35px;
+          max-width: 300px;
+        }
+        .partner-grid img {
+          max-height: 50px;
+          max-width: 160px;
         }
         .section-title { font-size: 28px; }
       }
@@ -332,6 +342,13 @@
         </div>
     </section>
 
+    <!-- 分隔条 -->
+    <div class="section-divider">
+        <div class="divider-line"></div>
+        <div class="divider-dot"></div>
+        <div class="divider-line"></div>
+    </div>
+
     <!-- 合作伙伴（简化版，仅显示 Logo） -->
     <section id="strategic-partnerships">
         <div class="section-header">
@@ -364,6 +381,69 @@
                     <p class="footer-description">
                         The first on-chain operating system that seamlessly integrates DeFi, RWA, and MemeCoins with AI-powered intelligence.
                     </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Privacy Policy Section -->
+        <div class="privacy-policy-section">
+            <div class="privacy-container">
+                <h2 class="privacy-title">LOOMI AI Chrome Extension Privacy Policy</h2>
+
+                <div class="privacy-meta">
+                    <span><strong>Effective Date</strong>: September 17, 2025</span> |
+                    <span><strong>Last Updated</strong>: September 17, 2025</span> |
+                    <span><strong>Version</strong>: 1.0.0</span>
+                </div>
+
+                <div class="privacy-content">
+                    <div class="privacy-section">
+                        <h3>1. Overview</h3>
+                        <p>LOOMI AI (referred to as "we," "us," or "this extension") is committed to protecting user privacy. This privacy policy details how we collect, use, store, and protect your personal information. By installing, accessing, or using this Chrome extension, you explicitly consent to and accept all terms of this privacy policy, including our use of cookies and local storage data.</p>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h3>2. Information Collection</h3>
+                        <h4>2.1 Automatically Collected Information</h4>
+                        <p><strong>Cookies and Local Storage</strong>: We use Chrome extension storage API to store your user preferences, configuration settings, and cryptocurrency portfolio data. We use local storage (localStorage) to cache price data for improved application performance and store user session information to maintain login status. Using this extension indicates your consent to our reading, writing, and managing of local storage data.</p>
+
+                        <h4>2.2 User-Provided Information</h4>
+                        <p>We collect email addresses for OTP authentication and account verification, portfolio data including cryptocurrency holdings information you add, price alert settings you configure, and usage preferences such as interface settings and notification preferences.</p>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h3>3. Information Usage</h3>
+                        <p>The information we collect is used solely for providing real-time cryptocurrency price monitoring, sending price alerts and market notifications, storing and synchronizing user portfolios, providing AI-driven market analysis, optimizing extension performance and user experience, and verifying user identity and session management.</p>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h3>4. Data Storage and Security</h3>
+                        <p><strong>Storage</strong>: Most data is stored locally in your browser, with some configuration data syncing to our secure servers. Price data comes from public APIs like CoinGecko and Binance. <strong>Security</strong>: We use industry-standard encryption technology, implement access control and authentication mechanisms, conduct regular security audits, and follow Chrome extension security best practices.</p>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h3>5. Data Sharing</h3>
+                        <p>We do not sell, trade, or transfer your personal information to third parties, except for carefully vetted cloud service providers (data hosting only), email service providers (OTP verification only), legal disclosure requirements, and protecting our legitimate interests.</p>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h3>6. User Rights</h3>
+                        <p>You have the right to view stored personal data at any time, modify or update your account information, delete specific data items, completely delete account and all related data, and uninstall the extension to stop all data collection.</p>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h3>7. Financial Disclaimer</h3>
+                        <p><strong>Important Declaration</strong>: All information, analysis, and recommendations provided by this extension are for educational and informational purposes only and do not constitute investment, financial, trading, or other types of advice. Cryptocurrency investments carry extremely high risks and may result in total loss of principal. Cryptocurrency prices are extremely unstable and regulatory environments are constantly changing.</p>
+                    </div>
+
+                    <div class="privacy-section">
+                        <h3>8. Contact & Legal</h3>
+                        <p><strong>Contact</strong>: For privacy-related questions, email daisydeng39@gmail.com or visit <a href="https://loolomiai.ai" target="_blank">loolomiai.ai</a>. We will respond within 5 business days. <strong>Legal Jurisdiction</strong>: This privacy policy is governed by the laws of Singapore. Disputes are resolved through amicable consultation, and if consultation fails, submitted to courts with jurisdiction in Singapore.</p>
+                    </div>
+
+                    <div class="privacy-footer">
+                        <p><strong>Important Reminders</strong>: This policy is a legal document. Please read carefully and ensure you understand all terms. If you do not agree with any part of this policy, please do not use this extension. Your privacy is important, and we are committed to protecting your personal information security.</p>
+                    </div>
                 </div>
             </div>
         </div>

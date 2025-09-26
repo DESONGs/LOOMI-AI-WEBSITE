@@ -67,7 +67,7 @@
 /* 统一合作伙伴区域 */
 #strategic-partnerships {
   background: var(--bg-tertiary);
-  padding: 80px 20px;
+  padding: var(--spacing-2xl) 20px;
 }
 
 /* 移除所有突兀的渐变背景 */
@@ -160,12 +160,11 @@
 
 /* MemeOS 专题页面样式 */
 .memeos-section {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding: 120px var(--spacing-lg) var(--spacing-2xl);
+  padding: var(--spacing-2xl) var(--spacing-lg);
   background: var(--bg-secondary);
 }
 
