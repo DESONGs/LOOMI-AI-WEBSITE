@@ -1,0 +1,827 @@
+/* RWA 专题页面样式 - 与官网统一设计风格 */
+
+/* ========== RWA 主容器 ========== */
+.rwa-section {
+  background: var(--bg-secondary);
+  padding: var(--spacing-2xl) 0;
+  position: relative;
+}
+
+.rwa-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+/* ========== RWA Hero 区域 ========== */
+.rwa-hero {
+  padding: var(--spacing-2xl) 0;
+  margin-bottom: var(--spacing-2xl);
+  text-align: center;
+}
+
+.rwa-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.rwa-hero-title {
+  font-family: var(--font-mono);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-lg);
+}
+
+.rwa-hero-title .title-gradient {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rwa-hero-title .title-accent {
+  color: var(--text-primary);
+}
+
+.rwa-hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 500;
+}
+
+.rwa-hero-description {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* ========== RWA Metrics ========== */
+.rwa-hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  margin: var(--spacing-xl) 0;
+}
+
+.rwa-metric {
+  background: var(--bg-card);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all var(--transition-normal);
+}
+
+.rwa-metric:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-blue-light);
+  box-shadow: 0 8px 25px rgba(45, 90, 240, 0.15);
+}
+
+.rwa-metric-value {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-blue-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.rwa-metric-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ========== RWA CTA 按钮 ========== */
+.rwa-cta-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  margin-top: var(--spacing-xl);
+}
+
+.rwa-cta-buttons-center {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  margin-top: var(--spacing-lg);
+}
+
+.btn-secondary {
+  padding: 14px 32px;
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.btn-secondary:hover {
+  border-color: var(--primary-blue);
+  color: var(--primary-blue-light);
+  background: rgba(45, 90, 240, 0.05);
+}
+
+.btn-large {
+  padding: 16px 40px;
+  font-size: 1.125rem;
+}
+
+/* ========== RWA Section Block ========== */
+.rwa-section-block {
+  margin-bottom: var(--spacing-2xl);
+  padding: var(--spacing-xl) 0;
+}
+
+.rwa-section-block:last-of-type {
+  margin-bottom: 0;
+}
+
+.rwa-section-block .section-header {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.rwa-section-block .section-title {
+  margin-bottom: var(--spacing-md);
+}
+
+.rwa-section-block .section-subtitle {
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ========== RWA Value Grid ========== */
+.rwa-value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.rwa-value-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  transition: all var(--transition-normal);
+}
+
+.rwa-value-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary-blue-light);
+  box-shadow: 0 10px 35px rgba(45, 90, 240, 0.2);
+}
+
+.rwa-value-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+  box-shadow: 0 8px 20px rgba(45, 90, 240, 0.3);
+}
+
+.rwa-value-card h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+}
+
+.rwa-value-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ========== RWA Services Grid ========== */
+.rwa-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.rwa-service-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  transition: all var(--transition-normal);
+}
+
+.rwa-service-card:hover {
+  transform: translateX(8px);
+  border-color: var(--primary-blue-light);
+  box-shadow: -5px 0 30px rgba(45, 90, 240, 0.2);
+}
+
+.rwa-service-number {
+  font-size: 0.875rem;
+  color: var(--primary-blue-light);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.rwa-service-card h3 {
+  font-size: 1.75rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+}
+
+.rwa-service-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-lg);
+}
+
+.rwa-service-stats {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.rwa-service-stat {
+  flex: 1;
+}
+
+.rwa-service-stat-value {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-blue-light);
+  margin-bottom: var(--spacing-xs);
+}
+
+.rwa-service-stat-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ========== RWA Process Timeline ========== */
+.rwa-process-timeline {
+  margin-top: var(--spacing-xl);
+}
+
+.rwa-process-step {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+  position: relative;
+}
+
+.rwa-process-step::before {
+  content: '';
+  position: absolute;
+  left: 60px;
+  top: 100px;
+  width: 2px;
+  height: calc(100% + 32px);
+  background: linear-gradient(180deg, rgba(45, 90, 240, 0.5) 0%, transparent 100%);
+}
+
+.rwa-process-step:last-child::before {
+  display: none;
+}
+
+.rwa-process-number {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  box-shadow: 0 10px 30px rgba(45, 90, 240, 0.4);
+  transition: all var(--transition-normal);
+}
+
+.rwa-process-step:hover .rwa-process-number {
+  transform: scale(1.05);
+}
+
+.rwa-process-content {
+  padding-top: var(--spacing-sm);
+}
+
+.rwa-process-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: var(--spacing-md);
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+}
+
+.rwa-process-header:hover {
+  border-color: var(--primary-blue-light);
+  background: rgba(45, 90, 240, 0.05);
+}
+
+.rwa-process-duration {
+  font-size: 0.875rem;
+  color: var(--primary-blue-light);
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.rwa-process-content h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin: 0;
+  font-weight: 600;
+}
+
+.rwa-process-toggle-icon {
+  color: var(--primary-blue-light);
+  transition: transform var(--transition-normal);
+  flex-shrink: 0;
+  margin-left: var(--spacing-md);
+}
+
+.rwa-process-header.active .rwa-process-toggle-icon {
+  transform: rotate(180deg);
+}
+
+.rwa-process-details {
+  list-style: none;
+  margin-top: var(--spacing-md);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+.rwa-process-details.expanded {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: var(--spacing-md);
+}
+
+.rwa-process-details li {
+  padding: var(--spacing-sm) 0;
+  padding-left: var(--spacing-lg);
+  color: var(--text-secondary);
+  position: relative;
+  line-height: 1.6;
+}
+
+.rwa-process-details li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary-blue-light);
+  font-weight: 700;
+}
+
+/* ========== RWA Advantages List (Flow Design) ========== */
+.rwa-advantages-section {
+  background: linear-gradient(180deg, transparent 0%, rgba(45, 90, 240, 0.02) 100%);
+  padding: var(--spacing-2xl) 0;
+  margin: var(--spacing-2xl) 0;
+}
+
+.rwa-advantages-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.rwa-advantage-item {
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: flex-start;
+  padding: var(--spacing-lg) 0;
+  border-left: 2px solid transparent;
+  padding-left: var(--spacing-lg);
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.rwa-advantage-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 0;
+  background: linear-gradient(180deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+  transition: height 0.4s ease;
+}
+
+.rwa-advantage-item:hover::before {
+  height: 100%;
+}
+
+.rwa-advantage-item:hover {
+  padding-left: calc(var(--spacing-lg) + 8px);
+}
+
+.rwa-advantage-number {
+  font-family: var(--font-mono);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-blue-light);
+  opacity: 0.3;
+  line-height: 1;
+  min-width: 80px;
+  transition: all var(--transition-normal);
+}
+
+.rwa-advantage-item:hover .rwa-advantage-number {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.rwa-advantage-content {
+  flex: 1;
+}
+
+.rwa-advantage-content h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.rwa-advantage-content p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* ========== RWA Market Stats (Flow Design) ========== */
+.rwa-market-section {
+  padding: var(--spacing-2xl) 0;
+  text-align: center;
+  position: relative;
+}
+
+.rwa-market-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 120%;
+  background: radial-gradient(ellipse at center, rgba(45, 90, 240, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.rwa-market-section .section-header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.rwa-stats-showcase {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.rwa-stat-column {
+  flex: 1;
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  position: relative;
+  transition: all var(--transition-normal);
+}
+
+.rwa-stat-column:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 20%;
+  width: 1px;
+  height: 60%;
+  background: linear-gradient(180deg, transparent 0%, rgba(45, 90, 240, 0.3) 50%, transparent 100%);
+}
+
+.rwa-stat-column:hover {
+  transform: scale(1.05);
+}
+
+.rwa-stat-column:hover .rwa-stat-value {
+  transform: scale(1.1);
+}
+
+.rwa-stat-value {
+  font-family: var(--font-mono);
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: var(--spacing-md);
+  letter-spacing: -2px;
+  display: block;
+  line-height: 1;
+  transition: transform var(--transition-normal);
+}
+
+.rwa-stat-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.rwa-data-sources {
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background: rgba(45, 90, 240, 0.05);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(45, 90, 240, 0.1);
+}
+
+.rwa-data-sources p {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.rwa-data-sources strong {
+  color: var(--text-secondary);
+}
+
+/* ========== RWA CTA Section (Optimized) ========== */
+.rwa-cta-section {
+  text-align: center;
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  margin-top: var(--spacing-2xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.rwa-cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(45, 90, 240, 0.5) 50%, transparent 100%);
+}
+
+.rwa-cta-section::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(45, 90, 240, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.rwa-cta-section h2 {
+  font-family: var(--font-mono);
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+  z-index: 1;
+}
+
+.rwa-cta-section p {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xl);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
+.rwa-twitter-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all var(--transition-normal);
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 20px rgba(45, 90, 240, 0.3);
+}
+
+.rwa-twitter-btn:hover {
+  box-shadow: 0 8px 30px rgba(45, 90, 240, 0.5);
+  transform: translateY(-2px);
+}
+
+.rwa-twitter-btn svg {
+  transition: transform var(--transition-fast);
+}
+
+.rwa-twitter-btn:hover svg {
+  transform: scale(1.15) rotate(-5deg);
+}
+
+/* ========== 响应式设计 ========== */
+@media (max-width: 1024px) {
+  .rwa-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .rwa-value-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rwa-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rwa-stats-showcase {
+    flex-wrap: wrap;
+  }
+
+  .rwa-stat-column {
+    flex: 1 1 calc(50% - var(--spacing-md));
+    min-width: 200px;
+  }
+
+  .rwa-stat-column:nth-child(2)::after {
+    display: none;
+  }
+
+  .rwa-advantage-number {
+    font-size: 2rem;
+    min-width: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rwa-section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .rwa-content-wrapper {
+    padding: 0 var(--spacing-md);
+  }
+
+  .rwa-hero {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .rwa-hero-title {
+    font-size: 2rem;
+  }
+
+  .rwa-hero-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .rwa-hero-metrics {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .rwa-cta-buttons,
+  .rwa-cta-buttons-center {
+    flex-direction: column;
+  }
+
+  .rwa-process-step {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .rwa-process-step::before {
+    display: none;
+  }
+
+  .rwa-process-number {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+
+  .rwa-process-content {
+    padding-top: 0;
+  }
+
+  .rwa-process-header {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .rwa-process-toggle-icon {
+    align-self: flex-end;
+    margin-top: var(--spacing-sm);
+    margin-left: 0;
+  }
+
+  .rwa-process-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .rwa-service-stats {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .rwa-stats-showcase {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .rwa-stat-column {
+    padding: var(--spacing-lg);
+  }
+
+  .rwa-stat-column::after {
+    display: none !important;
+  }
+
+  .rwa-stat-value {
+    font-size: 2.5rem;
+  }
+
+  .rwa-advantage-item {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .rwa-advantage-item::before {
+    display: none;
+  }
+
+  .rwa-advantage-number {
+    font-size: 3rem;
+  }
+
+  .rwa-cta-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rwa-hero-title {
+    font-size: 1.75rem;
+  }
+
+  .rwa-hero-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .rwa-metric-value {
+    font-size: 1.5rem;
+  }
+
+  .rwa-value-card,
+  .rwa-service-card,
+  .rwa-advantage-card {
+    padding: var(--spacing-lg);
+  }
+
+  .rwa-stat-value {
+    font-size: 2rem;
+  }
+}
